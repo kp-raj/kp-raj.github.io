@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h3>Choose Language-</h3>
+<form action="{{url_for('mode')}}" method="GET">
+    <input type="radio" name='language' Value='Telugu'style="margin: 5px;" required>
+    <label for="Telugu">Telugu</label>
+    <input type="radio" name="language" Value='Hindi'style="margin: 5px;">
+    <label for="Hindi">Hindi</label><br>
+    <input type="radio" name="language" Value='Anything'style="margin: 5px;">
+    <label for="Anything">Anything</label><br>
+    <input class="btn btn-secondary btn-sm" type="submit" value="Go!" style="margin-top: 5px;">
+</form>
+{%endblock%}

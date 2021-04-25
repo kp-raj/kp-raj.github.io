@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<p>Choosen Language: {{language}}</p>
+<h3>Guess-</h3>
+<p class="fst-italic fs-6">| Score double by guessing the Lyricist! |</p>
+<form action="{{url_for('game')}}" method="GET">
+    <input type="radio" name='GameMode' Value='Song'style="margin: 5px;" required>
+    <label for="Song">Song name</label>
+    <input type="radio" name="GameMode" Value='Lyricist'style="margin: 5px;">
+    <label for="Lyricist">Lyricist</label>
+    <input type="radio" name="GameMode" Value='Movie'style="margin: 5px;">
+    <label for="Movie">Movie name</label><br>
+    <input type="radio" name="GameMode" Value='Anything'style="margin: 5px;">
+    <label for="Anything">Anything</label><br>
+    <input class="btn btn-secondary btn-sm" type="submit" value="Go!" style="margin: 5px;">
+</form>
+{%endblock%}
