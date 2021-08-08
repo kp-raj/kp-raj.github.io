@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pruthvi-Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.6.0.js"></script>
+</head>
+<body style="font-family: 'Montserrat', sans-serif;">
+    <div style="margin: 10px; position: fixed;"><a href="/projects.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+          </a>
+    </div>
+<div  style="margin: 10px; text-align: center;">
+<h1>Crop out</h1>
+
+<div  style="margin:auto; width: 45%; text-align: justify;">
+    <p>A web application, using PIL library of Python, where user submits a picture of themselves with plain background and the person is then pasted into either pictures of random landscapes or an uploaded picture of user’s choice.</p>
+    <div class="card" style="margin:10%;"><img src="/images/pro-5/3.png"></div>
+    <p>Determining where the background ends and the person starts at every row of pixels was a hard part. I calculated variance between the RGB values of each pixel to determine where the person starts and ends. This step was taking lot of run time when involved with cropping the person out, so I distributed this to the first step where the person uploads the pic and save the pixel matrix coordinates in a dictionary.</p>
+    <div class="card" style="margin:10%"><img src="/images/pro-5/2.png"></div>
+    <p>The open source picture set I downloaded had pictures of various sizes, brightness, and resolutions. So, I calculated average brightness of every background picture and cached it in a json file. I then changed the brightness of the user’s picture and pasted it in the background picture after cropping accordingly.</p>
+</div>
+</div>
+<br>
+<div style="border-top: 0.5px solid black;  width: 40%; margin: auto; text-align: center; font-size: smaller;  "><i>Aug 2021. Built with</i> <a href="https://getbootstrap.com/" style="text-decoration: none;">Bootstrap</a></div>
+</body>
+</html>

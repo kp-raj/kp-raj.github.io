@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pruthvi-Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.6.0.js"></script>
+</head>
+<body style="font-family: 'Montserrat', sans-serif;">
+    <div style="margin: 10px; position: fixed; "><a href="/projects.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+          </a>
+    </div>
+<div  style="margin: 10px; text-align: center;">
+<h1>Guess Lyrics</h1>
+
+<div  style="margin:auto; width: 45%; text-align: justify;">
+    <p>Like all other music loves, I love listening to songs. Songs with good lyrics make them even better. </p>
+    <p>I decided to build an application where user is randomly given few lines from a song and must guess the song, movie, or lyricist. I started a habit of noting down great lyrics from songs I listen to and created an excel sheet with Telegu and Hindi movie songs. </p>
+    <div class="card" style="margin:10%;"><img src="/images/pro-4/1.png"></div>
+    <p>I used Flask framework and Python’s Openpyxl library to interact with the excel sheet and randomly picked rows to display. Random multiple choices are given to the user and upon choosing correct lyricist, they are awarded double points.</p>
+    <div class="card" style="margin:10%"><img src="/images/pro-4/3.png"></div>
+    <p>The app also saves the points the user has earned and maintains a leaderboard. I deployed the app using Heroku.</p>
+    <div class="card" style="margin:10%"><img src="/images/pro-4/4.png"></div>
+
+</div>
+<h4>See it <a href="https://lyrics-kpr.herokuapp.com/" style="text-decoration: none;">Live</a></h4>
+</div>
+<br>
+<div style="border-top: 0.5px solid black;  width: 40%; margin: auto; text-align: center; font-size: smaller;  "><i>Aug 2021. Built with</i> <a href="https://getbootstrap.com/" style="text-decoration: none;">Bootstrap</a></div>
+</body>
+</html>
