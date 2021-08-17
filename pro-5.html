@@ -17,6 +17,7 @@
 <h1>Crop out</h1>
 
 <div  style="margin:auto; width: 45%; text-align: justify;">
+    <p><i>Tech stack used: Flask, Python, PIL, HTML/CSS, Bootstrap, JavaScript</i></p>
     <p>A web application, using PIL library of Python, where user submits a picture of themselves with plain background and the person is then pasted into either pictures of random landscapes or an uploaded picture of user’s choice.</p>
     <div class="card" style="margin:10%;"><img src="/images/pro-5/3.png"></div>
     <p>Determining where the background ends and the person starts at every row of pixels was a hard part. I calculated variance between the RGB values of each pixel to determine where the person starts and ends. This step was taking lot of run time when involved with cropping the person out, so I distributed this to the first step where the person uploads the pic and save the pixel matrix coordinates in a dictionary.</p>
